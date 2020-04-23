@@ -1,0 +1,19 @@
+<%= erb :indent, :locals => {:nav_button => :links_nav} %>
+
+<h1>Here are all the registered links</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Link</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @links.each do |link| %>
+    <tr>
+      <td><a href="/link/<%= link.keyword %>"><%= link.keyword %></a></td>
+      <td><a href="/delete/<%= link.keyword %>" class="btn btn-danger">Delete</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

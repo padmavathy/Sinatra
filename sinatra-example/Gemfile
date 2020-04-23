@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-reloader'
+gem 'sinatra-content-for'
+gem 'mongoid'
+
+gem 'thin'
+gem 'json'
+gem 'haml'
+gem 'byebug'
