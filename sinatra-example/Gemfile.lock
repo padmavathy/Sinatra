@@ -9,10 +9,9 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
-    backports (3.17.1)
     bson (4.8.2)
+    byebug (11.1.3)
     concurrent-ruby (1.1.6)
-    contest (0.1.3)
     daemons (1.3.1)
     eventmachine (1.2.7)
     haml (5.1.2)
@@ -21,7 +20,6 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     json (2.3.0)
-    json_pure (2.3.0)
     minitest (5.14.0)
     mongo (2.11.4)
       bson (>= 4.4.2, < 5.0.0)
@@ -29,45 +27,34 @@ GEM
       activemodel (>= 5.1, < 6.1)
       mongo (>= 2.7.0, < 3.0.0)
     multi_json (1.14.1)
-    mustermann (1.1.1)
+    mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
-    rack (2.2.2)
-    rack-protection (2.0.8.1)
+    rack (2.2.4)
+    rack-protection (2.2.3)
       rack
-    rake (13.0.1)
-    redgreen (1.2.2)
-    ruby2_keywords (0.0.2)
-    rubyforge (2.0.4)
-      json_pure (>= 1.1.7)
-    sinatra (2.0.8.1)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.3)
+      mustermann (~> 2.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.3)
       tilt (~> 2.0)
     sinatra-content-for (0.1)
-      contest
-      redgreen
       sinatra
-      sr-mg
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
+    sinatra-contrib (2.2.3)
       multi_json
-      mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
+      mustermann (~> 2.0)
+      rack-protection (= 2.2.3)
+      sinatra (= 2.2.3)
       tilt (~> 2.0)
     sinatra-reloader (1.0)
       sinatra-contrib
-    sr-mg (0.0.5)
-      rake
-      rubyforge
     temple (0.8.2)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     thread_safe (0.3.6)
-    tilt (2.0.10)
+    tilt (2.0.11)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     zeitwerk (2.3.0)
@@ -76,6 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   haml
   json
   mongoid
